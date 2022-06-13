@@ -9,6 +9,10 @@ import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/fi
 let avatar = document.getElementById("avatar")
 let botonSalir = document.getElementById("botonsalir")
 let botonlogin = document.getElementById("btnlogin")
+let botontienda = document.getElementById("btnTienda")
+let botonmusica = document.getElementById("btnMusica")
+let botonregistro = document.getElementById("navmodalregistrar")
+let avatarcirculo = document.getElementById("avatarcirculo")
 
 
 
@@ -21,6 +25,10 @@ onAuthStateChanged(auth, (user) => {
         avatar.classList.remove("invisible")
         avatar.textContent = user.email
         botonlogin.classList.add("invisible")
+        botontienda.classList.remove("invisible")
+        botonmusica.classList.remove("invisible")
+        botonregistro.classList.add("invisible")
+        avatarcirculo.classList.remove("invisible")
 
 
         //RUTINA DE SALIR
