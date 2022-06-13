@@ -1,4 +1,4 @@
-import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js"
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"
 
 let modalregistrar = new bootstrap.Modal(document.getElementById('portfolioModalRegistro'))
 let botonnvarregistrar = document.getElementById("navmodalregistrar")
